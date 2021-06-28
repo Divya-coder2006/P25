@@ -1,4 +1,4 @@
-class Bin{
+class Dustbin{
     constructor(x,y)
     {
         this.x=x;
