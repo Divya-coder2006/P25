@@ -10,9 +10,6 @@ var ground,ground2,ground3,ground4;
 var dustBinImg;
 
 function preload(){
-
-dustBinImg= loadImage("bin.png")	
-
 }
 
 function setup() {
@@ -26,9 +23,7 @@ function setup() {
 	ground2 = new Ground(10,375,20,730);
 	ground3= new Ground(1590,375,20,730);
 	ground4 = new Ground(800,10,1600,20);
-	log1=new Bin(1280,725,130,20);
-	log2=new Bin(1350,640,20,190);
-	log3=new Bin(1220,640,20,190);
+	bin = new Dustbin(1200,740);
 	ball=new Ball(80,420,45,45);
 
 
@@ -46,11 +41,7 @@ function draw() {
   ground2.display();
   ground3.display();
   ground4.display();
-  log1.display();
-  log2.display();
-  log3.display();
-  imageMode(CENTER);
-  image(dustBinImg,1285,640,200,220);
+  bin.display();
 
   ball.display();
 
