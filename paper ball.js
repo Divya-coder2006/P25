@@ -4,8 +4,8 @@ class Ball{
          var options ={
              'restitution':0.3,
              'isStatic':false,
-             'density':2.5,
-             'friction': 0.3
+             'density':2.7,
+            // 'friction': 0.1
          }
          this.body = Bodies.circle(x,y,(radius-20)/2,options);
          this.radius = radius;
